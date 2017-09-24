@@ -1,0 +1,134 @@
+/*#navbar-container {*/
+/*padding-bottom: 20px;*/
+/*}*/
+
+/* GLOBAL STYLES
+-------------------------------------------------- */
+/* Padding below the footer and lighter body text */
+
+body {
+    padding-bottom: 3rem;
+    /*color: #5a5a5a;*/
+}
+
+#slogan-div {
+    width: 160px;
+}
+
+/* MARKETING CONTENT
+-------------------------------------------------- */
+
+.jumbotron .lead {
+    margin-top: 40px;
+}
+
+.nav-pills a {
+    color: #4b5257;
+}
+
+.nav-pills a:hover {
+    color: #1d1e1f;
+}
+
+.nav-pills .active a:hover {
+    color: #1d1e1f;
+}
+
+.nav > li > a:hover,
+.nav > li > a:focus {
+    color: #1d1e1f;
+}
+
+.undraggable-images .col  img {
+    pointer-events: none;
+}
+
+.nav-pills > li > a.active,
+.dropdown.show {
+    color: #1d1e1f !important;
+    background-color: rgba(0, 0, 0, 0.1) !important;
+    border: 1px #e4e4e4 !important;
+}
+
+/* Main marketing message and sign up button */
+.jumbotron {
+    text-align: center;
+    /*background-color: transparent !important;*/
+}
+
+.jumbotron .btn {
+    padding: 14px 24px;
+    font-size: 21px;
+}
+
+/* Center align the text within the three columns below the carousel */
+.marketing .col-lg-4 {
+    margin-bottom: 1.5rem;
+    text-align: center;
+}
+
+.marketing h2 {
+    font-weight: normal;
+}
+
+.marketing .col-lg-4 p {
+    margin-right: .75rem;
+    margin-left: .75rem;
+}
+
+/* Featurettes
+------------------------- */
+
+.featurette-divider {
+    margin: 5rem 0; /* Space out the Bootstrap <hr> more */
+}
+
+/* Thin out the marketing headings */
+.featurette-heading {
+    font-weight: 300;
+    line-height: 1;
+    letter-spacing: -.05rem;
+}
+
+/* RESPONSIVE CSS
+-------------------------------------------------- */
+
+@media (min-width: 768px) {
+    .navbar-nav {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+    }
+
+    .navbar-nav .nav-item {
+        -webkit-box-flex: 1;
+        -webkit-flex: 1 0 auto;
+        -ms-flex: 1 0 auto;
+        flex: 1 0 auto;
+    }
+}
+
+/* Responsive: Portrait tablets and up */
+@media screen and (min-width: 768px) {
+    /* Remove the padding we set earlier */
+    .masthead,
+    .marketing,
+    .footer {
+        padding-right: 0;
+        padding-left: 0;
+    }
+}
+
+@media (min-width: 40em) {
+    .featurette-heading {
+        font-size: 50px;
+    }
+}
+
+@media (min-width: 62em) {
+    .featurette-heading {
+        margin-top: 7rem;
+    }
+}
+

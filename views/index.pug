@@ -1,0 +1,113 @@
+extends layout
+
+block content
+    .container
+        div.jumbotron
+            h2.d-inline-block Spinning your
+            div#slogan-div.d-inline-block
+                h1#animated-text.d-inline-block &nbsp idea &nbsp
+            h2.d-inline-block  into the web.
+
+            p.lead.mb-5 Give us some ideas about what you want to see in your website, and we'll make sure it meets your expectations.
+            .card.m-5
+                .card-block
+                    .container
+                        .row.align-items-center.undraggable-images
+                            .col
+                                img.img-thumbnail.p-0(src='images/choosecolors.svg' width='120' height='120')
+                            .col
+                                img(src='images/plus.svg' width='50' height='50')
+                            .col
+                                img.img-thumbnail.p-0(src='images/chooselayout.svg' width='120' height='120')
+                            .col
+                                img(src='images/plus.svg' width='50' height='50')
+                            .col
+                                img.img-thumbnail.p-0(src='images/features.svg' width='120' height='120')
+
+                        .row.mt-4
+                            .col
+                                div.fa-border
+                                    h5.mt-1 Look
+                            .col
+                                // empty for alignment reasons
+                            .col
+                                div.fa-border
+                                    h5.mt-1 Feel
+                            .col
+                                // empty for alignment reasons
+                            .col
+                                div.fa-border
+                                    h5.mt-1 Features
+
+
+            a.btn.btn-lg.btn-success(href='/services', role='button') See our services »
+
+        script(src='../javascripts/animated-text.js')
+        script(src='../javascripts/scroll-reveal-anim.js')
+
+        .container.marketing
+            .card#who-are-we
+                h2.card-header.text-center Who are we?
+                .card-block
+                    h4.card-subtitle.text-center.m-5 We are a small, <strong>passionate</strong> development team comprised of people who are <strong>devoted</strong> to what they do.
+                    br
+                    .row
+                        .col-lg-4
+                            img.rounded(src='images/dedication.svg', alt='Generic placeholder image', width='200', height='200')
+                            h2.mt-4 Dedication
+                            p Being a small team, we are free to decide on which projects to work on. This means we will always be passionate at what we do and we will direct our full attention towards your needs.
+                        .col-lg-4
+                            img.rounded(src='images/detail.svg', alt='Generic placeholder image', width='200', height='200')
+                            h2.mt-4 Detail
+                            p Sometimes the little things take a while to perfect. We believe this is what sets a good website apart from a great one and we will spend as much time as necessary to ensure everything is right.
+                        .col-lg-4
+                            img.rounded(src='images/creativity.svg', alt='Generic placeholder image', width='200', height='200')
+                            h2.mt-4 Creativity
+                            p There is always more than one way to accomplish a goal. This has always been one of our beliefs and we apply it to everything we do, whether it's a more intuitive interface or a completely new layout.
+                    .text-center
+                        a.btn.btn-secondary.mb-3(href='/about', role='button') Learn more about us »
+
+
+        // START THE FEATURETTEs
+        .container.showcase.mt-4
+            .card#showcase
+                h2.card-header.text-center Showcase
+                .card-block.p-5
+                    br
+                    .row
+                        .row.featurette
+                            .col-md-7
+                                h2.featurette-heading
+                                    | Website 1.
+                                    span.text-muted  It'll blow your mind.
+                                p.lead
+                                    | This is website, its good.
+                            .col-md-5
+                                img.featurette-image.img-fluid.mx-auto(src='http://placehold.it/500x500', alt='Generic placeholder image')
+                        hr.featurette-divider
+                        .row.featurette
+                            .col-md-7.push-md-5
+                                h2.featurette-heading
+                                    | Website 2.
+                                    span.text-muted  See for yourself.
+                                p.lead
+                                    | This. Good. Too.
+                            .col-md-5.pull-md-7
+                                img.featurette-image.img-fluid.mx-auto(src='http://placehold.it/500x500', alt='Generic placeholder image')
+                        hr.featurette-divider
+                        .row.featurette
+                            .col-md-7
+                                h2.featurette-heading
+                                    | Website 3.
+                                    span.text-muted  Checkmate.
+                                p.lead
+                                    | The best website ever created.
+                            .col-md-5
+                                img.featurette-image.img-fluid.mx-auto(src='http://placehold.it/500x500', alt='Generic placeholder image')
+                        // /END THE FEATURETTES
+
+
+
+
+
+
